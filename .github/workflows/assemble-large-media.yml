@@ -1,0 +1,51 @@
+name: Assemble verified media source ZIP
+on:
+  push:
+    branches:
+      - media-v1.0-assets
+permissions:
+  contents: write
+jobs:
+  reconstruct:
+    if: github.repository == 'DenisAniskov/SPb_in_Details_Media_public'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: media-v1.0-assets
+          persist-credentials: true
+      - name: Reassemble and verify source archive from byte-identical parts
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, pathlib, zipfile
+          folder = pathlib.Path('videos/vertical')
+          target = folder / 'editable_source.zip'
+          parts = [folder / 'editable_source.zip.part00', folder / 'editable_source.zip.part01']
+          expected = '83f35490e471e24cfcd18e7af9d54ef90b7ddb46e7eecfeb4618d63fc2202da6'
+          if target.exists() and not any(p.exists() for p in parts):
+              print('Archive already reconstructed')
+          else:
+              assert all(p.exists() for p in parts), 'Missing byte chunk'
+              data = b''.join(p.read_bytes() for p in parts)
+              got = hashlib.sha256(data).hexdigest()
+              assert got == expected, f'SHA256 mismatch: {got}'
+              target.write_bytes(data)
+              with zipfile.ZipFile(target) as z:
+                  assert z.testzip() is None, 'Corrupted source ZIP'
+              for p in parts:
+                  p.unlink()
+              print(f'Reconstructed {target} ({len(data)} bytes, SHA256={got})')
+          PY
+      - name: Commit verified ZIP and remove temporary assembly workflow
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- videos/vertical/editable_source.zip videos/vertical/editable_source.zip.part00 videos/vertical/editable_source.zip.part01
+          git rm -f .github/workflows/assemble-large-media.yml
+          if ! git diff --cached --quiet; then
+            git commit -m 'media: reconstruct verified vertical video source archive'
+            git push origin HEAD:refs/heads/media-v1.0-assets
+          fi
