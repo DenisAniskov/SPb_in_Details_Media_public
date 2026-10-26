@@ -1,0 +1,16 @@
+# Preserve checksums across Windows/Linux checkouts.
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.srt text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.mp4 binary
+*.pdf binary
+*.pptx binary
+*.docx binary
+*.zip binary
