@@ -1,0 +1,24 @@
+{
+  "media_package": "1.0",
+  "prepared_at": "2026-10-27",
+  "project": "Петербург в деталях",
+  "author": "Денис Аниськов",
+  "application_version": "1.1.1",
+  "build": 3,
+  "platform": "Android",
+  "minimum_android": "8.0",
+  "release": "https://github.com/DenisAniskov/SPb_in_Details_public/releases/tag/v1.1.1",
+  "apk_sha256": "2a5004d8fa16fe5f2747fea0ea9a6ee5c0d8bdaf42803e25492a8fc2900a9d63",
+  "horizontal_video": {
+    "resolution": "1920x1080",
+    "duration_seconds": 38.2,
+    "format": "MP4 H.264/AAC"
+  },
+  "vertical_video": {
+    "resolution": "720x1280",
+    "duration_seconds": 38.2,
+    "format": "MP4 H.264/AAC"
+  },
+  "screenshot_provenance": "Archived screenshots version 1.0.0+1, POCO X6 5G, 2026-10-20. Not included in this pack.",
+  "publication_state": "staging_assets_pending"
+}
