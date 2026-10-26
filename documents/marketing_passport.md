@@ -237,3 +237,4 @@
 - **[Сайт: публичный исходный код](https://github.com/DenisAniskov/SPb_in_Details_Website_public)** — статический сайт.
 - **[Сайт: права на материалы](https://github.com/DenisAniskov/SPb_in_Details_Website_public/blob/main/ASSET_RIGHTS.md)** — границы MIT и сторонние права.
 - **Локальный базовый документ:** `SPb_in_Details_Technical_Passport_v1.0.md` (26.10.2026).
+
