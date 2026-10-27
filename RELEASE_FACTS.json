@@ -20,5 +20,9 @@
     "format": "MP4 H.264/AAC"
   },
   "screenshot_provenance": "Archived screenshots version 1.0.0+1, POCO X6 5G, 2026-10-20. Not included in this pack.",
-  "publication_state": "staging_assets_pending"
+  "publication_state": "released",
+  "published_repository": "https://github.com/DenisAniskov/SPb_in_Details_Media_public",
+  "publication_commit": "50849983a738cb44a7a21c9e8b2aed04e210b40a",
+  "media_assets_verified": 25,
+  "media_integrity_ci": "https://github.com/DenisAniskov/SPb_in_Details_Media_public/actions/runs/40420042465"
 }
