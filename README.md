@@ -1,61 +1,33 @@
-# Петербург в деталях — официальный медиакаталог
+# Петербург в деталях — FINAL-медиакаталог
 
-**«Замечай больше. Открывай Петербург.»**
+Автор: Денис Аниськов. Android 8.0+, v1.1.1+3.
 
-Публичный каталог материалов проекта **«Петербург в деталях»**: маркетинговые ролики, презентация, буклет, пресс-кит, технический и маркетинговый паспорта.
+[Официальный Android-релиз](https://github.com/DenisAniskov/SPb_in_Details_public/releases/tag/v1.1.1) · [Сайт](https://spb-in-details.vercel.app/media/)
 
-**Автор проекта:** Денис Аниськов.  
-**Приложение:** Android 8.0+, версия **1.1.1+3** (по состоянию на октябрь 2026).  
-**[Скачать официальную версию Android](https://github.com/DenisAniskov/SPb_in_Details_public/releases/tag/v1.1.1)** · [Официальный сайт](https://spb-in-details.vercel.app).
+17 оригинальных FINAL-файлов. Размеры и SHA-256: [manifest](CURRENT_MEDIA_MANIFEST.json), [SHA-256](CURRENT_SHA256SUMS.txt).
 
-## Контрольная точка проекта
+| Материал | Формат | Байт |
+|---|---|---:|
+| [promo_1920x1080_FINAL_v1.5.mp4](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/videos/horizontal/promo_1920x1080_FINAL_v1.5.mp4) | MP4 | 4306372 |
+| [Peterburg_v_detalyah_promo_VERTICAL_1080x1920_FINAL_v1.1.mp4](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/videos/vertical/promo_1080x1920_FINAL_v1.1.mp4) | MP4 | 2411686 |
+| [SPb_in_Details_App_Presentation_FINAL_v1.1.pdf](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/presentation/app_presentation_FINAL_v1.1.pdf) | PDF | 1322974 |
+| [SPb_in_Details_App_Presentation_FINAL_v1.1.pptx](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/presentation/app_presentation_FINAL_v1.1.pptx) | PPTX | 3767168 |
+| [Буклет_двусторонний_A4_печать_FINAL_v1.2.pdf](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/print/marketing_brochure_FINAL_v1.2.pdf) | PDF | 2429274 |
+| [Буклет_сторона_A_FINAL_v1.2.jpg](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/print/brochure_side_A_FINAL_v1.2.jpg) | JPG | 947001 |
+| [Буклет_сторона_B_FINAL_v1.2.jpg](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/print/brochure_side_B_FINAL_v1.2.jpg) | JPG | 1211489 |
+| [Превью_обеих_сторон_FINAL_v1.2.jpg](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/print/brochure_preview_FINAL_v1.2.jpg) | JPG | 326421 |
+| [Инструкция_по_печати_и_сгибу_FINAL_v1.2.pdf](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/print/brochure_print_guide_FINAL_v1.2.pdf) | PDF | 76995 |
+| [SPb_in_Details_Technical_Passport_FINAL_v1.1.pdf](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/documents/technical_passport_FINAL_v1.1.pdf) | PDF | 682293 |
+| [SPb_in_Details_Technical_Passport_FINAL_v1.1.docx](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/documents/technical_passport_FINAL_v1.1.docx) | DOCX | 3714263 |
+| [SPb_in_Details_Marketing_Passport_FINAL_v1.1.pdf](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/documents/marketing_passport_FINAL_v1.1.pdf) | PDF | 657291 |
+| [SPb_in_Details_Marketing_Passport_FINAL_v1.1.docx](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/documents/marketing_passport_FINAL_v1.1.docx) | DOCX | 3712131 |
+| [SPb_in_Details_Press_Fact_Sheet_FINAL_v1.2.pdf](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/press/fact_sheet_FINAL_v1.2.pdf) | PDF | 130567 |
+| [SPb_in_Details_Press_Fact_Sheet_FINAL_v1.2.docx](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/press/fact_sheet_FINAL_v1.2.docx) | DOCX | 1644045 |
+| [SPb_in_Details_Press_Release_FINAL_v1.1.pdf](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/press/press_release_FINAL_v1.1.pdf) | PDF | 132830 |
+| [SPb_in_Details_Press_Release_FINAL_v1.1.docx](https://raw.githubusercontent.com/DenisAniskov/SPb_in_Details_Media_public/main/press/press_release_FINAL_v1.1.docx) | DOCX | 1643451 |
 
-**[Финальная фиксация состояния — 27.10.2026](checkpoints/PROJECT_CHECKPOINT_2026-10-27.md)**: опубликованные исходные релизы, проверенный медиапакет, SHA рабочих и публичных исходников и production deployment сайта. Прямой браузерный smoke-test /media/ указан отдельно как рекомендуемая проверка.
+Старые редакции: [archive/v1.0](archive/v1.0/) и история Git. SOURCE_SHA256SUMS.txt — исторический манифест. Старый ZIP v1.0 не является текущим пресс-китом.
 
-**[Финальный технический аудит медиараздела — 27.10.2026](checkpoints/FINAL_MEDIA_AUDIT_2026-10-27.md)**: 12 ссылок на файлы, адаптивные стили, совпадение исходников, production Vercel и 731 postbuild-проверка. Визуальный тест в обычном браузере не проводился и отмечен как ожидающий подтверждения.
+Архивные скриншоты относятся к Android v1.0.0+1. Ролики — стилизованная анимация.
 
-## Состояние публикации
-
-> **RELEASED — медиапакет v1.0 опубликован.** В `main` находятся все **25 медиафайлов**: два MP4, исходники, презентация, буклет, пресс-кит, документы и фирменные материалы. [GitHub Actions подтвердил целостность комплекта](https://github.com/DenisAniskov/SPb_in_Details_Media_public/actions/runs/40420042465) после merge PR #1 (27.10.2026 по Москве).
-
-[План публикации](PUBLISHING_PLAN.md) · [Права и условия использования материалов](MEDIA_RIGHTS.md) · [Факты о релизе](RELEASE_FACTS.json) · [Контрольные суммы исходной сборки](SOURCE_SHA256SUMS.txt)
-
-## Передача медиапакета
-
-**Готово: 25 из 25 файлов.** Два паспорта в Markdown, инструкция по печати и два SRT опубликованы без изменений, ещё 20 бинарных материалов добавлены в [PR #1](https://github.com/DenisAniskov/SPb_in_Details_Media_public/pull/1). Контрольные суммы проверяются [публичным CI](.github/workflows/public-media-ci.yml). Исторические инструкции по первичному переносу сохранены в [UPLOAD_GUIDE.md](UPLOAD_GUIDE.md).
-
-## Структура медиапакета
-
-| Путь | Содержание |
-|---|---|
-| `videos/horizontal/` | Full HD ролик 16:9, редактируемый исходник, постер, раскадровка, субтитры |
-| `videos/vertical/` | Ролик 9:16, исходник, обложка, субтитры |
-| `presentation/` | Презентация приложения (PDF/PPTX) |
-| `print/` | Маркетинговый буклет (PDF/PPTX), инструкция по печати |
-| `documents/` | Технический и маркетинговый паспорта (DOCX/Markdown) |
-| `press/` | Пресс-кит, пресс-релиз, факт-лист |
-| `brand/` | Веб-превью логотипа, промобаннер, QR-код релиза |
-
-Полный список и исходные SHA-256 опубликованы в `SOURCE_SHA256SUMS.txt`. Манифест включает также исходные редакции служебных документов; GitHub CI сверяет **25 медиафайлов** по их контрольным суммам.
-
-## Что действительно подтверждено
-
-- Текущая подтверждённая версия APK: **1.1.1+3**; распространяется через GitHub Releases.
-- В приложении есть редакционный каталог **180 мест**, **35 исторических справок**, Smart Walk, пешеходная навигация и дополнительные возможности.
-- Проморолики используют **стилизованную анимационную графику**, не являются записью работы актуального интерфейса.
-- Пять архивных скриншотов сайта относятся к **версии 1.0.0+1** и не входят в медиапакет.
-- Никакие заявления о проведённых массовых пользовательских испытаниях не делаются.
-
-## Авторские права
-
-MIT-лицензия исходного кода приложения, сервера и сайта **не распространяется автоматически** на медиа и товарные обозначения. См. [MEDIA_RIGHTS.md](MEDIA_RIGHTS.md).
-
-**Школьные работы, презентации для защиты и персональные данные учеников или педагогов сюда не загружаются.**
-
-## Первоисточники
-
-- [Android-приложение](https://github.com/DenisAniskov/SPb_in_Details_public)
-- [Backend](https://github.com/DenisAniskov/SPb_in_Details_Backend_public)
-- [Официальный сайт — исходники](https://github.com/DenisAniskov/SPb_in_Details_Website_public)
-
-Если вы хотите использовать материалы в публикации, соблюдайте условия в `MEDIA_RIGHTS.md` и указывайте название продукта и авторство.
+[Авторские права и условия использования](MEDIA_RIGHTS.md). MIT-лицензия кода не распространяется автоматически на медиа. Школьные материалы не входят в каталог.
