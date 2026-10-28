@@ -62,4 +62,22 @@ jobs:
               print('::notice::Media repository in staging (binary assets pending)')
           else:
               print(f'RELEASE CONTENT: {checked}/25 assets match original SHA-256.')
+          final_manifest = root / 'releases/2026-10-28/FINAL_SHA256SUMS.txt'
+          assert final_manifest.is_file(), 'Final media manifest missing'
+          final_expected = {}
+          for row in final_manifest.read_text('utf-8').splitlines():
+              if not row or row.startswith('#'):
+                  continue
+              h, path = row.split('  ', 1)
+              assert path.startswith('releases/2026-10-28/'), path
+              assert path not in final_expected, 'Duplicate final path: ' + path
+              assert len(h) == 64 and all(c in '0123456789abcdef' for c in h), path
+              final_expected[path] = h
+          assert len(final_expected) == 12, f'Expected 12 published FINAL assets, got {len(final_expected)}'
+          for rel, h in sorted(final_expected.items()):
+              file = root / rel
+              assert file.is_file(), 'Missing FINAL asset: ' + rel
+              actual = hashlib.sha256(file.read_bytes()).hexdigest()
+              assert actual == h, 'FINAL SHA-256 mismatch: ' + rel
+          print(f'FINAL MEDIA: {len(final_expected)} assets match SHA-256 (4 larger approved originals still pending).')
           PY

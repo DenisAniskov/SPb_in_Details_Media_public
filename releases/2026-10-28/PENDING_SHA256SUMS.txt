@@ -1,0 +1,6 @@
+# SHA-256 утверждённых файлов, которые ещё не опубликованы как бинарные объекты GitHub.
+# Строки здесь НЕ означают, что соответствующий файл уже находится в ветке.
+a9bc9fb4eaccfdfd44bbd7387a633142afef4f52ca5561e36391881bc777ca83  releases/2026-10-28/videos/promo_horizontal_FINAL_v1.5.mp4
+26f6929d6fd9faf637b88cce162895884ffa07d8e4e48f6e1157ffb6e3748c3f  releases/2026-10-28/presentation/app_presentation_FINAL_v1.1.pptx
+1074f4541b3b73332a23900e03a42171ea0ec032500e54a80a8abcd03ab917e6  releases/2026-10-28/documents/technical_passport_FINAL_v1.1.docx
+a47ee8d91d551bb614202daf019fa9d84e1aa8497842512d1a2a58cec59d3342  releases/2026-10-28/documents/marketing_passport_FINAL_v1.1.docx
