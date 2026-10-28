@@ -1,0 +1,111 @@
+{
+  "artifact": "SmartNavigator_SPb public FINAL media",
+  "source": "Google Drive FINAL originals folder 1YtkblrrJvORwr4aEHvGy1LtZuaG7_DGL",
+  "generated_utc": "2026-10-28T21:36:00.728370+00:00",
+  "number_of_public_files": 17,
+  "status": "local source package, NOT published to GitHub",
+  "files": [
+    {
+      "source_filename": "promo_1920x1080_FINAL_v1.5.mp4",
+      "path": "videos/horizontal/promo_1920x1080_FINAL_v1.5.mp4",
+      "size_bytes": 4306372,
+      "sha256": "a9bc9fb4eaccfdfd44bbd7387a633142afef4f52ca5561e36391881bc777ca83"
+    },
+    {
+      "source_filename": "Peterburg_v_detalyah_promo_VERTICAL_1080x1920_FINAL_v1.1.mp4",
+      "path": "videos/vertical/promo_1080x1920_FINAL_v1.1.mp4",
+      "size_bytes": 2411686,
+      "sha256": "d37307cc64031421cb47e790361eabba3ca16f723cb4a089aa88c347ac84f8d2"
+    },
+    {
+      "source_filename": "SPb_in_Details_App_Presentation_FINAL_v1.1.pdf",
+      "path": "presentation/app_presentation_FINAL_v1.1.pdf",
+      "size_bytes": 1322974,
+      "sha256": "0581f9135ea52dbe4ff9ffc4c6afd3891facbcd03d6a3150dab692200474866e"
+    },
+    {
+      "source_filename": "SPb_in_Details_App_Presentation_FINAL_v1.1.pptx",
+      "path": "presentation/app_presentation_FINAL_v1.1.pptx",
+      "size_bytes": 3767168,
+      "sha256": "26f6929d6fd9faf637b88cce162895884ffa07d8e4e48f6e1157ffb6e3748c3f"
+    },
+    {
+      "source_filename": "Буклет_двусторонний_A4_печать_FINAL_v1.2.pdf",
+      "path": "print/marketing_brochure_FINAL_v1.2.pdf",
+      "size_bytes": 2429274,
+      "sha256": "1d4c16304b7b227225ff7085f76fc1718a9c0814f81e0bfc22624c9a515f2e6c"
+    },
+    {
+      "source_filename": "Буклет_сторона_A_FINAL_v1.2.jpg",
+      "path": "print/brochure_side_A_FINAL_v1.2.jpg",
+      "size_bytes": 947001,
+      "sha256": "b7f79601dc300d90bf434c30f3b9fc22c4727aa2999ca1670ab3e97c952e2e94"
+    },
+    {
+      "source_filename": "Буклет_сторона_B_FINAL_v1.2.jpg",
+      "path": "print/brochure_side_B_FINAL_v1.2.jpg",
+      "size_bytes": 1211489,
+      "sha256": "f73bf8632be09a24efb5c06eca17a08554e4751b3f161d5c81bfb465ef28acd0"
+    },
+    {
+      "source_filename": "Превью_обеих_сторон_FINAL_v1.2.jpg",
+      "path": "print/brochure_preview_FINAL_v1.2.jpg",
+      "size_bytes": 326421,
+      "sha256": "1f992235ccec60e08f8b57a5a822e44a408136bcfd4a807433156cd9888a4ae4"
+    },
+    {
+      "source_filename": "Инструкция_по_печати_и_сгибу_FINAL_v1.2.pdf",
+      "path": "print/brochure_print_guide_FINAL_v1.2.pdf",
+      "size_bytes": 76995,
+      "sha256": "796ec1b19da5a3b6b3fc2e253b27eae9e09119402d14e6bf9875e3890820ebc6"
+    },
+    {
+      "source_filename": "SPb_in_Details_Technical_Passport_FINAL_v1.1.pdf",
+      "path": "documents/technical_passport_FINAL_v1.1.pdf",
+      "size_bytes": 682293,
+      "sha256": "942bc8161c8a5a356444aa218d1e93d2da672ee3e04d72d60b04c332d35f5137"
+    },
+    {
+      "source_filename": "SPb_in_Details_Technical_Passport_FINAL_v1.1.docx",
+      "path": "documents/technical_passport_FINAL_v1.1.docx",
+      "size_bytes": 3714263,
+      "sha256": "1074f4541b3b73332a23900e03a42171ea0ec032500e54a80a8abcd03ab917e6"
+    },
+    {
+      "source_filename": "SPb_in_Details_Marketing_Passport_FINAL_v1.1.pdf",
+      "path": "documents/marketing_passport_FINAL_v1.1.pdf",
+      "size_bytes": 657291,
+      "sha256": "94840a9ec330e92cfd5033615fb002dc68825ca6294e216a3d2ca2a408036df4"
+    },
+    {
+      "source_filename": "SPb_in_Details_Marketing_Passport_FINAL_v1.1.docx",
+      "path": "documents/marketing_passport_FINAL_v1.1.docx",
+      "size_bytes": 3712131,
+      "sha256": "a47ee8d91d551bb614202daf019fa9d84e1aa8497842512d1a2a58cec59d3342"
+    },
+    {
+      "source_filename": "SPb_in_Details_Press_Fact_Sheet_FINAL_v1.2.pdf",
+      "path": "press/fact_sheet_FINAL_v1.2.pdf",
+      "size_bytes": 130567,
+      "sha256": "c8928b9eb31fa58ff2c40d5dd766bd8b860cbe44ff3e6640351ab8103b3431b0"
+    },
+    {
+      "source_filename": "SPb_in_Details_Press_Fact_Sheet_FINAL_v1.2.docx",
+      "path": "press/fact_sheet_FINAL_v1.2.docx",
+      "size_bytes": 1644045,
+      "sha256": "7915506fe5b908aeedcb08657d31935faebaa5d37e20b7cfc490b6511061b3a0"
+    },
+    {
+      "source_filename": "SPb_in_Details_Press_Release_FINAL_v1.1.pdf",
+      "path": "press/press_release_FINAL_v1.1.pdf",
+      "size_bytes": 132830,
+      "sha256": "10108cbfda116f3f62fef38fbc91c1d884a93261f12a8078828eb9f369e03005"
+    },
+    {
+      "source_filename": "SPb_in_Details_Press_Release_FINAL_v1.1.docx",
+      "path": "press/press_release_FINAL_v1.1.docx",
+      "size_bytes": 1643451,
+      "sha256": "92febf505f11b12eb7f9e9cb271b4aa6b0e31e6d0afb869c63b1bc3642cd8cae"
+    }
+  ]
+}

@@ -1,65 +1,28 @@
 name: Public media integrity
-
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
   workflow_dispatch:
-
 permissions:
   contents: read
-
 jobs:
   verify-public-media:
-    name: Verify licensing, manifest and assets
     runs-on: ubuntu-latest
-    timeout-minutes: 5
     steps:
-      - name: Check out public media
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           persist-credentials: false
-      - name: Validate release metadata and SHA-256
-        shell: bash
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python scripts/verify_current_media.py
+      - name: Reject forbidden changed filenames
+        if: github.event_name == 'pull_request'
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
         run: |
-          python3 - <<'PY'
-          import hashlib, json, pathlib, sys
-          root = pathlib.Path('.')
-          facts = json.loads((root / 'RELEASE_FACTS.json').read_text('utf-8'))
-          assert facts.get('application_version') == '1.1.1'
-          assert facts.get('build') == 3
-          assert (root / 'MEDIA_RIGHTS.md').is_file()
-          assert (root / 'README.md').is_file()
-          expected = {}
-          prefixes = ('brand/', 'documents/', 'presentation/', 'press/', 'print/', 'videos/')
-          for row in (root / 'SOURCE_SHA256SUMS.txt').read_text('utf-8').splitlines():
-              if not row or row.startswith('#'):
-                  continue
-              h, path = row.split('  ', 1)
-              if path.startswith(prefixes):
-                  expected[path] = h
-          assert len(expected) == 25, f"Expected 25 media asset checksums, got {len(expected)}"
-          missing = []
-          checked = 0
-          for rel, h in sorted(expected.items()):
-              file = root / rel
-              if not file.exists():
-                  missing.append(rel)
-                  continue
-              if hashlib.sha256(file.read_bytes()).hexdigest() != h:
-                  sys.exit('SHA256 mismatch: ' + rel)
-              checked += 1
-          video_paths = [
-              root / 'videos/horizontal/promo_1920x1080_v1.0.mp4',
-              root / 'videos/vertical/promo_720x1280_v1.0.mp4',
-          ]
-          publishing = any(x.exists() for x in video_paths)
-          if publishing and missing:
-              sys.exit('Asset publication incomplete: ' + ', '.join(missing))
-          if not publishing:
-              print(f'STAGING: {checked}/25 assets verified; binary videos not yet uploaded.')
-              print('::notice::Media repository in staging (binary assets pending)')
-          else:
-              print(f'RELEASE CONTENT: {checked}/25 assets match original SHA-256.')
-          PY
+          git diff --name-only --diff-filter=ACMR "$BASE" HEAD > changed.txt
+          python -c "import pathlib,re; assert not re.search('school|grade10|защит|письменная|10класс',pathlib.Path('changed.txt').read_text(),re.I)"
